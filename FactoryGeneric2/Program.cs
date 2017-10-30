@@ -7,11 +7,11 @@ namespace FactoryGeneric2
     {
         static void Main(string[] args)
         {
-            var f = new Factory();
-            var a = f.CreateLink();
-            f.Produces<Internal>();     
-            var b = f.CreateLink();
-            Console.WriteLine(b.Type);
+            var factory = new Factory();
+            var create = factory.CreateLink();
+            factory.Produces<Internal>();     
+            var createLink = factory.CreateLink();
+            Console.WriteLine(createLink.Type);
             Console.ReadKey();
         }
     }
